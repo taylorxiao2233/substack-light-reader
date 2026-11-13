@@ -1,0 +1,16 @@
+{
+  "name": "substack-light-reader",
+  "version": "0.5.0",
+  "private": true,
+  "description": "A local-only light reading theme for dark Substack publications.",
+  "license": "MIT",
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check": "node scripts/check.mjs",
+    "preview": "node scripts/preview.mjs"
+  },
+  "lightReader": { "userscriptVersion": "2.1.0" }
+}

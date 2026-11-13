@@ -1,0 +1,2 @@
+468034b52ed8ed887f244528fc7461ff9a20c59891e8578a5286cc57454b1619  substack-light-reader-v0.5.0.zip
+aaefc955914114c76deac63a6fa086240250fd7a9459a94fd8538b2ea5c85dad  substack-light-reader-v2.1.0.user.js

@@ -1,0 +1,19 @@
+:root { color-scheme: light; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+body { width: 300px; margin: 0; color: #25231f; background: #fbfaf7; }
+main { padding: 20px; }
+.heading-row { display: flex; align-items: center; gap: 10px; }
+.title { flex: 1; }
+.eyebrow { margin: 0 0 2px; color: #746338; font-size: 9px; font-weight: 800; letter-spacing: .14em; }
+h1 { margin: 0; font-size: 18px; line-height: 1.2; }
+#status { margin: 20px 0 8px; font-size: 14px; line-height: 1.5; }
+#scope { margin: 0; font-size: 12px; line-height: 1.5; color: #6c6962; }
+footer { display: flex; justify-content: space-between; gap: 8px; margin-top: 18px; padding-top: 12px; border-top: 1px solid #dedbd2; font-size: 10px; color: #6c6962; }
+.switch { position: relative; width: 44px; height: 26px; flex: 0 0 auto; }
+.switch input { position: absolute; width: 100%; height: 100%; margin: 0; opacity: 0; }
+.slider { position: absolute; inset: 0; cursor: pointer; border-radius: 999px; background: #aba69d; transition: background 120ms ease; }
+.slider::before { position: absolute; content: ''; top: 3px; left: 3px; width: 20px; height: 20px; border-radius: 50%; background: #fff; box-shadow: 0 1px 3px #0003; transition: transform 120ms ease; }
+input:checked + .slider { background: #806600; }
+input:checked + .slider::before { transform: translateX(18px); }
+input:focus-visible + .slider { outline: 3px solid #a88c22; outline-offset: 3px; }
+input:disabled + .slider { opacity: .45; cursor: default; }
+@media (prefers-reduced-motion: reduce) { .slider, .slider::before { transition: none; } }

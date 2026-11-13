@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Substack Light Reader</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main>
+    <div class="heading-row">
+      <img class="icon" src="icons/48.png" width="36" height="36" alt="">
+      <div class="title"><p class="eyebrow">SUBSTACK</p><h1 id="title">Light Reader</h1></div>
+      <label class="switch"><input id="theme-toggle" type="checkbox" disabled aria-label="Enable automatic light reading"><span class="slider"></span></label>
+    </div>
+    <p id="status" role="status" aria-live="polite">Checking this page…</p>
+    <p id="scope">The switch applies to all supported reading pages.</p>
+    <footer><span id="version"></span><span id="local">Local-only · no tracking</span></footer>
+  </main>
+  <script src="runtime.js"></script>
+  <script src="sites.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

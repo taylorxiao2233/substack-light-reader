@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="Substack (local test fixture)">
+  <title>Light Reader local fixture</title>
+  <link rel="stylesheet" href="../../src/light-theme.css">
+  <style>
+    :root {--web_bg_color:#161616;--print_on_web_bg_color:#eee;--print_secondary_on_web_bg_color:#999;--color_theme_bg_elevated:#222;--color_theme_bg_elevated_secondary:#333;}
+    body {margin:0;font-family:system-ui; background:var(--web_bg_color);color:var(--print_on_web_bg_color);}
+    .main.use-theme-bg {background:var(--web_bg_color);color:var(--print_on_web_bg_color);padding:32px;}
+    .fixture-bar {background:#e7e4dd;color:#25231f;padding:18px;display:flex;gap:12px;flex-wrap:wrap;}
+    button {padding:8px 12px;border-radius:6px;border:1px solid #888;font:inherit;cursor:pointer;}
+    .cards {display:flex;gap:24px;margin-top:24px;}
+    .panel {border:1px solid #aaa;border-radius:8px;padding:16px;min-width:180px;}
+    .pubTheme-fixture {--color-fg-primary:var(--print_on_web_bg_color);--color-fg-secondary:var(--print_secondary_on_web_bg_color);--color-bg-elevated-primary:var(--color_theme_bg_elevated);--color-bg-elevated-secondary:var(--color_theme_bg_elevated_secondary);}
+    .dark-theme {--color-fg-primary:#eee;--color-bg-primary:#222;}
+    .elevatedTheme-fixture {--color-bg-primary:#282828;}
+    .color-primary-fixture {color:var(--color-fg-primary);}
+    .color-secondary-fixture {color:var(--color-fg-secondary);}
+    .bg-primary-fixture {background:var(--color-bg-primary);}
+    .bg-elevated-fixture {background:var(--color-bg-elevated-primary);}
+    .item-fixture {display:flex;align-items:center;gap:10px;width:100%;background:transparent;border:0;color:var(--color-fg-primary);}
+    .item-fixture[data-highlighted], .item-fixture:hover {background:var(--color-bg-elevated-secondary);}
+    .item-fixture svg {stroke:var(--color-fg-primary);}
+    .assistive {position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);}
+    #status {white-space:pre-wrap; background:#fff;color:#25231f;padding:20px; margin:0;font:13px monospace;}
+  </style>
+  <script defer src="../../src/runtime.js"></script>
+  <script defer src="demo.js"></script>
+</head>
+<body>
+  <nav class="fixture-bar">
+    <button id="toggle">Toggle theme</button>
+    <button id="route">Enter dashboard / return to article</button>
+    <button id="late">Create another tooltip</button>
+    <button id="check">Check rendered colors</button>
+  </nav>
+  <div class="main use-theme-bg"><article class="single-post-container">
+    <h1>Local reading-page fixture</h1>
+    <p>Self-authored components exercise the shared runtime and CSS. No third-party article or account content.</p>
+  </article></div>
+  <div class="cards" id="cards">
+    <div data-radix-popper-content-wrapper><div class="dark-theme"><div class="elevatedTheme-fixture"><div class="bg-primary-fixture panel"><span id="tip" class="color-primary-fixture">Search / Messages / Notifications</span></div></div></div><span class="assistive" role="tooltip">Screen-reader label</span></div>
+    <div data-radix-popper-content-wrapper><div role="menu"><div class="pubTheme-fixture"><div class="bg-elevated-fixture panel">
+      <p id="name" class="color-primary-fixture">Example account</p><p id="muted" class="color-secondary-fixture">Menu description</p>
+      <button class="item-fixture priority_primary-fixture" role="menuitem"><svg id="outline" width="20" height="20" viewBox="0 0 24 24" stroke="currentColor" fill="none"><circle cx="12" cy="12" r="9"/></svg><span id="menu-text" class="color-primary-fixture">Profile</span></button>
+      <button class="item-fixture priority_primary-fixture" role="menuitem" data-highlighted><span id="hover-text" class="color-primary-fixture">Highlighted item</span></button>
+    </div></div></div></div>
+  </div>
+  <pre id="status">Loading…</pre>
+</body>
+</html>

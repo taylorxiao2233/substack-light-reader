@@ -1,0 +1,234 @@
+html[data-substack-light] {
+  color-scheme: light !important;
+  background: #fbfaf7 !important;
+  /* Substack's publication and portalled menus consume these native tokens. */
+  --web_bg_color: #fbfaf7 !important;
+  --color_theme_bg_web: #fbfaf7 !important;
+  --cover_bg_color: #fbfaf7 !important;
+  --cover_bg_color_secondary: #f1f0ec !important;
+  --print_on_web_bg_color: #25231f !important;
+  --print_secondary_on_web_bg_color: #6c6962 !important;
+  --cover_print_primary: #25231f !important;
+  --cover_print_secondary: #6c6962 !important;
+  --cover_print_tertiary: #6c6962 !important;
+  --background_contrast_2: #e7e4dd !important;
+  --background_contrast_3: #d3d0c7 !important;
+  --background_contrast_4: #817e76 !important;
+  --background_contrast_5: #625f58 !important;
+  --color_theme_bg_contrast_1: #f1f0ec !important;
+  --color_theme_bg_contrast_2: #e7e4dd !important;
+  --color_theme_bg_contrast_5: #625f58 !important;
+  --color_theme_bg_elevated: #ffffff !important;
+  --color_theme_bg_elevated_secondary: #f1f0ec !important;
+  --color_theme_bg_elevated_tertiary: #e7e4dd !important;
+  --color_theme_detail: #dedbd2 !important;
+  --theme_bg_is_dark: 0 !important;
+  --background_contrast_1: #f1f0ec !important;
+  --color-bg-elevated-hover-themed: #f1f0ec !important;
+  --color-bg-secondary-hover-themed: #f1f0ec !important;
+  --color-bg-tertiary-themed: #eceae4 !important;
+  --color-utility-detail-themed: #dedbd2 !important;
+  --color_theme_bg_contrast_3: #d3d0c7 !important;
+  --color_theme_bg_contrast_4: #817e76 !important;
+  --border-primary-themed: 1px solid #dedbd2 !important;
+  --cover_border_color: #dedbd2 !important;
+  --vibrance-tertiary: #00000080 !important;
+}
+
+html[data-substack-light] body,
+html[data-substack-light] .main.use-theme-bg,
+html[data-substack-light] .single-post-container,
+html[data-substack-light] [class*="mainMenuContent"],
+html[data-substack-light] [class*="bg-primary"],
+html[data-substack-light] [class*="bg-secondary"] {
+  background-color: #fbfaf7 !important;
+}
+
+html[data-substack-light] [class*="bg-primary"][class*="container-"] {
+  background-color: #f1f0ec !important;
+  border-color: #dedbd2 !important;
+}
+
+html[data-substack-light] [class*="mainMenuContent"],
+html[data-substack-light] .single-post-container {
+  color: #25231f !important;
+}
+
+html[data-substack-light] [class*="mainMenuContent"] *,
+html[data-substack-light] .single-post-container * {
+  color: #25231f !important;
+}
+
+html[data-substack-light] .single-post-container a {
+  color: #4f5d59 !important;
+}
+
+html[data-substack-light="artandbiz.substack.com"] .single-post-container a {
+  color: #745a00 !important;
+}
+
+html[data-substack-light="letters.thedankoe.com"] .single-post-container a {
+  color: #3f5b55 !important;
+}
+
+html[data-substack-light] .subtitle,
+html[data-substack-light] [class*="color-secondary"],
+html[data-substack-light] [class*="font-meta"],
+html[data-substack-light] time {
+  color: #6c6962 !important;
+}
+
+html[data-substack-light] input,
+html[data-substack-light] textarea,
+html[data-substack-light] [contenteditable="true"] {
+  color: #25231f !important;
+  background-color: #ffffff !important;
+  border-color: #cfcac0 !important;
+}
+
+html[data-substack-light] input::placeholder,
+html[data-substack-light] textarea::placeholder {
+  color: #77736b !important;
+  opacity: 1 !important;
+}
+
+html[data-substack-light] .post-ufi-button,
+html[data-substack-light] button[class*="buttonStyle-"][class*="priority_secondary"] {
+  --color-button-fg: #25231f !important;
+  --color-button-hover-fg: #25231f !important;
+  color: #25231f !important;
+  border-color: #d8d4ca !important;
+  background-color: #ffffff !important;
+}
+
+html[data-substack-light] button[class*="buttonStyle-"][class*="priority_tertiary"] {
+  --color-button-fg: #25231f !important;
+  --color-button-hover-fg: #25231f !important;
+  color: #25231f !important;
+  border-color: #c9c5bb !important;
+  background-color: #f1f0ec !important;
+  box-shadow: inset 0 0 0 1px #d8d4ca !important;
+}
+
+/* Menu items also contain priority_primary; only real CTA buttons qualify. */
+html[data-substack-light] button[class*="buttonStyle-"][class*="priority_primary"],
+html[data-substack-light] .subscribe-btn {
+  color: #ffffff !important;
+  background-color: #25231f !important;
+  border-color: #25231f !important;
+}
+
+html[data-substack-light] button[class*="buttonStyle-"][class*="priority_primary"] *,
+html[data-substack-light] .subscribe-btn * {
+  color: #ffffff !important;
+}
+
+html[data-substack-light] button[class*="buttonStyle-"][class*="priority_secondary"] svg,
+html[data-substack-light] button[class*="buttonStyle-"][class*="priority_tertiary"] svg {
+  color: #25231f !important;
+}
+
+html[data-substack-light] button[class*="buttonStyle-"][class*="priority_secondary"]:hover,
+html[data-substack-light] button[class*="buttonStyle-"][class*="priority_tertiary"]:hover {
+  background-color: #e7e4dd !important;
+}
+
+html[data-substack-light] [role="tablist"] {
+  color: #25231f !important;
+  background-color: #ffffff !important;
+  border-color: #c9c5bb !important;
+  box-shadow: inset 0 0 0 1px #d8d4ca !important;
+}
+
+html[data-substack-light] [role="tablist"] [class*="highlight-"],
+html[data-substack-light] [role="tablist"] [class*="bg-secondary"] {
+  background-color: #e4e1d9 !important;
+}
+
+html[data-substack-light] [role="tab"] {
+  color: #625f58 !important;
+}
+
+html[data-substack-light] [role="tab"][aria-selected="true"],
+html[data-substack-light] [role="tab"][data-state="active"] {
+  color: #25231f !important;
+}
+
+html[data-substack-light] .footer.themed-background {
+  color: #625f58 !important;
+  background-color: #f1f0ec !important;
+}
+
+html[data-substack-light] .footer.themed-background * {
+  color: #625f58 !important;
+}
+
+/*
+ * Radix renders the visible tooltip beside a hidden role=tooltip span.
+ * Style the portal and all nested theme boundaries, including .dark-theme
+ * and elevated panels. Changing only the ARIA span cannot fix the tooltip.
+ * Tokens on descendants are intentional: nested themes redefine them.
+ */
+html[data-substack-light] :is(
+  [data-radix-popper-content-wrapper],
+  [role="menu"], [role="dialog"], [role="tooltip"],
+  .dropdown-menu, .dropdown-menu-wrapper
+),
+html[data-substack-light] :is(
+  [data-radix-popper-content-wrapper],
+  [role="menu"], [role="dialog"], [role="tooltip"],
+  .dropdown-menu, .dropdown-menu-wrapper
+) * {
+  --color-fg-primary: #25231f !important;
+  --color-fg-secondary: #625f58 !important;
+  --color-fg-tertiary: #77736b !important;
+  --color-fg-primary-themed: #25231f !important;
+  --color-fg-secondary-themed: #625f58 !important;
+  --color-fg-tertiary-themed: #77736b !important;
+  --color-bg-primary: #ffffff !important;
+  --color-bg-primary-hover: #f1f0ec !important;
+  --color-bg-secondary: #f1f0ec !important;
+  --color-bg-tertiary: #e7e4dd !important;
+  --color-bg-quaternary: #dedbd2 !important;
+  --color-bg-elevated: #ffffff !important;
+  --color-bg-elevated-primary: #ffffff !important;
+  --color-bg-elevated-secondary: #f1f0ec !important;
+  --color-bg-elevated-tertiary: #e7e4dd !important;
+  --color-bg-elevated-hover: #f1f0ec !important;
+  --color-bg-elevated-themed: #ffffff !important;
+  --color-utility-detail: #dedbd2 !important;
+  --color-utility-detail-themed: #dedbd2 !important;
+  --color-tooltip-bg: #ffffff !important;
+  --color-tooltip-fg: #25231f !important;
+  --border-default: 1px solid #dedbd2 !important;
+}
+
+/* Native styles now resolve text, hover states, separators and SVG paint. */
+html[data-substack-light] :is([role="menu"], [role="dialog"], .dropdown-menu, .dropdown-menu-wrapper) {
+  color: #25231f !important;
+  background-color: #ffffff !important;
+  border-color: #dedbd2 !important;
+}
+
+html[data-substack-light] button.icon-container,
+html[data-substack-light] button.icon-container * {
+  color: #ffffff !important;
+}
+
+html[data-substack-light] button.icon-container svg[stroke],
+html[data-substack-light] button.icon-container svg[stroke] * {
+  stroke: #ffffff !important;
+}
+
+html[data-substack-light] iframe {
+  background-color: #ffffff !important;
+}
+
+html[data-substack-light] hr {
+  border-color: #dedbd2 !important;
+}
+
+html[data-substack-light] ::selection {
+  color: #25231f !important;
+  background: #f7df35 !important;
+}

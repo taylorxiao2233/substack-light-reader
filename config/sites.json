@@ -1,0 +1,25 @@
+{
+  "verifiedAt": "2026-09-08",
+  "standardPattern": "https://*.substack.com/*",
+  "sources": [
+    "https://substack.com/top/technology",
+    "https://substack.com/top/business",
+    "https://substack.com/top/finance",
+    "https://substack.com/top/culture"
+  ],
+  "customSites": [
+    { "name": "future/proof (Dan Koe)", "hostname": "letters.thedankoe.com" },
+    { "name": "Lenny’s Newsletter", "hostname": "www.lennysnewsletter.com" },
+    { "name": "Noahpinion", "hostname": "www.noahpinion.blog" },
+    { "name": "SemiAnalysis", "hostname": "newsletter.semianalysis.com" },
+    { "name": "The Pragmatic Engineer", "hostname": "newsletter.pragmaticengineer.com" },
+    { "name": "ByteByteGo", "hostname": "blog.bytebytego.com" },
+    { "name": "Exponential View", "hostname": "www.exponentialview.co" },
+    { "name": "Product Growth", "hostname": "www.news.aakashg.com" },
+    { "name": "Newcomer", "hostname": "www.newcomer.co" },
+    { "name": "The Generalist", "hostname": "www.generalist.com" },
+    { "name": "Citrini Research", "hostname": "www.citriniresearch.com" },
+    { "name": "Doomberg", "hostname": "newsletter.doomberg.com" },
+    { "name": "Blocked and Reported", "hostname": "www.blockedandreported.org" }
+  ]
+}

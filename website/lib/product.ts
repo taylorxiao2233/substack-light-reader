@@ -1,0 +1,81 @@
+// Snapshot of the real downloadable product. Refresh with scripts/sync-product-assets.mjs.
+export const product = {
+  "version": "0.5.0",
+  "userscriptVersion": "2.1.0",
+  "legacyScriptName": "Art & Biz Substack 亮色阅读模式",
+  "checkedDate": "November 10, 2026",
+  "downloads": [
+    {
+      "name": "substack-light-reader-v0.5.0.zip",
+      "url": "/downloads/substack-light-reader-v0.5.0.zip",
+      "bytes": 21371,
+      "sha256": "468034b52ed8ed887f244528fc7461ff9a20c59891e8578a5286cc57454b1619"
+    },
+    {
+      "name": "substack-light-reader-v2.1.0.user.js",
+      "url": "/downloads/substack-light-reader-v2.1.0.user.js",
+      "bytes": 25384,
+      "sha256": "aaefc955914114c76deac63a6fa086240250fd7a9459a94fd8538b2ea5c85dad"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "url": "/downloads/SHA256SUMS.txt",
+      "bytes": 202,
+      "sha256": "405e57947220c01f54888ae839ba10feaa997afd8ae25209e6b9480f3e4816b8"
+    }
+  ],
+  "customSites": [
+    {
+      "name": "future/proof (Dan Koe)",
+      "hostname": "letters.thedankoe.com"
+    },
+    {
+      "name": "Lenny’s Newsletter",
+      "hostname": "www.lennysnewsletter.com"
+    },
+    {
+      "name": "Noahpinion",
+      "hostname": "www.noahpinion.blog"
+    },
+    {
+      "name": "SemiAnalysis",
+      "hostname": "newsletter.semianalysis.com"
+    },
+    {
+      "name": "The Pragmatic Engineer",
+      "hostname": "newsletter.pragmaticengineer.com"
+    },
+    {
+      "name": "ByteByteGo",
+      "hostname": "blog.bytebytego.com"
+    },
+    {
+      "name": "Exponential View",
+      "hostname": "www.exponentialview.co"
+    },
+    {
+      "name": "Product Growth",
+      "hostname": "www.news.aakashg.com"
+    },
+    {
+      "name": "Newcomer",
+      "hostname": "www.newcomer.co"
+    },
+    {
+      "name": "The Generalist",
+      "hostname": "www.generalist.com"
+    },
+    {
+      "name": "Citrini Research",
+      "hostname": "www.citriniresearch.com"
+    },
+    {
+      "name": "Doomberg",
+      "hostname": "newsletter.doomberg.com"
+    },
+    {
+      "name": "Blocked and Reported",
+      "hostname": "www.blockedandreported.org"
+    }
+  ]
+} as const;

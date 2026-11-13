@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="580" viewBox="0 0 1040 580" role="img" aria-labelledby="title desc">
+  <title id="title">Substack Light Reader — dark and light reading themes</title>
+  <desc id="desc">A local component illustration. A dark article appears on the left; the same layout with warm white background, dark text and a readable menu appears on the right. This is not a screenshot of a live publication.</desc>
+  <rect width="1040" height="580" rx="24" fill="#eeeae0"/>
+  <g font-family="system-ui, -apple-system, sans-serif">
+    <text x="40" y="52" font-size="27" font-weight="700" fill="#25231f">A little more daylight for your reading.</text>
+    <text x="40" y="82" font-size="15" fill="#6c6962">Substack Light Reader · Chrome extension + userscript</text>
+    <rect x="40" y="115" width="465" height="405" rx="16" fill="#17191c"/>
+    <rect x="535" y="115" width="465" height="405" rx="16" fill="#fbfaf7"/>
+    <text x="66" y="148" font-size="11" font-weight="700" letter-spacing="2" fill="#b4b5b7">ORIGINAL DARK THEME</text>
+    <text x="561" y="148" font-size="11" font-weight="700" letter-spacing="2" fill="#6c6962">LIGHT READING THEME</text>
+    <path d="M40 169h465M535 169h465" stroke="#85837c" opacity=".3"/>
+    <text x="66" y="213" font-size="23" font-weight="650" fill="#f3f3f4">Ideas worth sitting with.</text>
+    <text x="561" y="213" font-size="23" font-weight="650" fill="#25231f">Ideas worth sitting with.</text>
+    <text x="66" y="243" font-size="12" fill="#a6a9af">A quiet corner for a good essay.</text>
+    <text x="561" y="243" font-size="12" fill="#6c6962">A quiet corner for a good essay.</text>
+    <g fill="#9ba1ab"><rect x="66" y="281" width="408" height="7" rx="3"/><rect x="66" y="302" width="394" height="7" rx="3"/><rect x="66" y="323" width="410" height="7" rx="3"/><rect x="66" y="344" width="295" height="7" rx="3"/><rect x="66" y="384" width="405" height="7" rx="3"/><rect x="66" y="405" width="365" height="7" rx="3"/><rect x="66" y="426" width="396" height="7" rx="3"/></g>
+    <g fill="#746f65"><rect x="561" y="281" width="408" height="7" rx="3"/><rect x="561" y="302" width="394" height="7" rx="3"/><rect x="561" y="323" width="410" height="7" rx="3"/><rect x="561" y="344" width="295" height="7" rx="3"/><rect x="561" y="384" width="405" height="7" rx="3"/><rect x="561" y="405" width="365" height="7" rx="3"/><rect x="561" y="426" width="396" height="7" rx="3"/></g>
+    <rect x="769" y="362" width="204" height="134" rx="11" fill="#000" opacity=".08"/>
+    <rect x="765" y="356" width="204" height="134" rx="11" fill="#fff" stroke="#dedbd2"/>
+    <text x="781" y="381" font-size="12" font-weight="700" fill="#25231f">Readable menus, too.</text>
+    <rect x="775" y="394" width="184" height="33" rx="6" fill="#f1f0ec"/>
+    <circle cx="791" cy="410" r="5" stroke="#25231f" fill="none" stroke-width="1.5"/>
+    <path d="M795 414l4 4" stroke="#25231f" stroke-width="1.5"/>
+    <text x="810" y="415" font-size="12" fill="#25231f">Search publication</text>
+    <text x="782" y="450" font-size="12" fill="#625f58">Settings &amp; tooltips</text>
+    <path d="M777 461h180" stroke="#dedbd2"/>
+    <text x="782" y="479" font-size="10" fill="#625f58">Local-only. No tracking.</text>
+    <text x="40" y="551" font-size="12" fill="#6c6962">Component illustration · Original artwork and article content stay in place · Independent beta project</text>
+  </g>
+</svg>

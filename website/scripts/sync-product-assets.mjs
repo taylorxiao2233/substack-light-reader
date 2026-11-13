@@ -1,0 +1,24 @@
+import { readFileSync, writeFileSync, mkdirSync, copyFileSync, statSync } from 'node:fs';
+import { resolve, join } from 'node:path';
+import { createHash } from 'node:crypto';
+const source = resolve(process.argv[2] || '..');
+const target = process.cwd();
+const pkg = JSON.parse(readFileSync(join(source, 'package.json'), 'utf8'));
+if (pkg.name !== 'substack-light-reader') throw new Error('Choose the Substack Light Reader project as the source.');
+const config = JSON.parse(readFileSync(join(source, 'config/sites.json'), 'utf8'));
+const directory = join(target, 'public/downloads');
+mkdirSync(directory, { recursive: true });
+mkdirSync(join(target, 'lib'), { recursive: true });
+const files = [`substack-light-reader-v${pkg.version}.zip`, `substack-light-reader-v${pkg.lightReader.userscriptVersion}.user.js`, 'SHA256SUMS.txt'];
+const downloads = files.map(name => {
+  const from = join(source, 'dist', name);
+  copyFileSync(from, join(directory, name));
+  return { name, url: `/downloads/${name}`, bytes: statSync(from).size, sha256: createHash('sha256').update(readFileSync(from)).digest('hex') };
+});
+for (const name of ['LICENSE', 'PRIVACY.md', 'CHANGELOG.md']) copyFileSync(join(source, name), join(directory, name));
+copyFileSync(join(source, 'assets/icon.svg'), join(target, 'public/brand-icon.svg'));
+copyFileSync(join(source, 'assets/icon.svg'), join(target, 'public/favicon.svg'));
+const product = { version: pkg.version, userscriptVersion: pkg.lightReader.userscriptVersion, legacyScriptName: 'Art & Biz Substack 亮色阅读模式', checkedDate: 'November 10, 2026', downloads, customSites: config.customSites };
+writeFileSync(join(target, 'lib/product.ts'), `// Snapshot of the real downloadable product. Refresh with scripts/sync-product-assets.mjs.\nexport const product = ${JSON.stringify(product, null, 2)} as const;\n`);
+writeFileSync(join(target, 'public/downloads/release.json'), JSON.stringify(product, null, 2) + '\n');
+console.log(`Copied extension ${product.version}, userscript ${product.userscriptVersion}, and release checksums.`);

@@ -1,0 +1,66 @@
+name: Theme or compatibility problem / 样式问题
+description: Report extension, userscript, or product website problems.
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve Substack Light. Please use a public page URL and remove private account information, messages, and paid article content from screenshots.
+        感谢反馈。请使用公开页面网址，截图中不要包含账户资料、私信或付费正文。
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before reporting / 提交前
+      options:
+        - label: I updated to the latest release and refreshed the page. / 已更新并刷新页面。
+          required: true
+        - label: For extension/script issues, I checked that only one copy is enabled. / 扩展或脚本问题已确认没有重复启用。
+          required: false
+  - type: dropdown
+    id: installation
+    attributes:
+      label: Installation / 安装方式
+      options:
+        - Chrome extension / Chrome 扩展
+        - Tampermonkey userscript / 油猴脚本
+        - Product website / 官网
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Tool version / 工具版本
+      placeholder: "Extension 0.5.0, userscript 2.1.0, or website"
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser version and operating system / 浏览器版本与系统
+      placeholder: "Chrome version, macOS / Windows / Linux"
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Public page URL / 公开页面网址
+      description: Remove account tokens, private links, and unnecessary tracking parameters.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: What happened and how to reproduce it / 问题与复现步骤
+      description: Include the expected appearance and the control or area affected. Mention if a menu or tooltip must be opened first.
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Cropped screenshot, if helpful / 局部截图（可选）
+      description: Remove account details, private messages, and paid article content before uploading.
+  - type: textarea
+    id: other_extensions
+    attributes:
+      label: Other theme extensions or relevant details / 其他主题扩展及补充信息
+      description: Mention tools that change page colors, fonts, or translation, if enabled.
