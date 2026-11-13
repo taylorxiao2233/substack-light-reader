@@ -68,7 +68,9 @@ Internal links use the page language. Native page links are intentional: they wo
 
 Cloudflare Workers deployment is configured in `wrangler.jsonc` with the Worker name `substacklight` and custom domain `substacklight.com`. See the [deployment guide (中文)](../docs/CLOUDFLARE_DEPLOY.zh-CN.md).
 
-From this directory, use `npm run cf:login` to authorize your Cloudflare account, then `npm run deploy` to build and publish. `npm run deploy:check` validates an existing build without publishing.
+Recommended: connect this GitHub repository to Cloudflare Workers Builds, set the root directory to `website`, the production branch to `main`, the build command to `npm run typecheck && npm run build`, and the deploy command to `npm run deploy:built`. Set the build variable `NODE_VERSION=24`. Cloudflare then builds and publishes production updates when you push to `main`; local Wrangler login is not needed for this workflow.
+
+For optional manual deployment from this directory, use `npm run cf:login` to authorize your Cloudflare account, then `npm run deploy` to build and publish. `npm run deploy:check` validates an existing build without publishing.
 
 Publishing the repository to GitHub does not publish the website or change DNS. Configure hosting separately. The configured public origin is `https://substacklight.com`; a fork should update `lib/site-config.ts` before deploying.
 
