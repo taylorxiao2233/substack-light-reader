@@ -66,6 +66,10 @@ Internal links use the page language. Native page links are intentional: they wo
 
 ## Hosting
 
+Cloudflare Workers deployment is configured in `wrangler.jsonc` with the Worker name `substacklight` and custom domain `substacklight.com`. See the [deployment guide (中文)](../docs/CLOUDFLARE_DEPLOY.zh-CN.md).
+
+From this directory, use `npm run cf:login` to authorize your Cloudflare account, then `npm run deploy` to build and publish. `npm run deploy:check` validates an existing build without publishing.
+
 Publishing the repository to GitHub does not publish the website or change DNS. Configure hosting separately. The configured public origin is `https://substacklight.com`; a fork should update `lib/site-config.ts` before deploying.
 
 For an existing Sites deployment, keep its project binding in your ignored `.openai/hosting.json`. A new Sites project must receive its own binding from that service. The public example is sufficient for local development and builds, and does not give anyone access to the maintainer's deployment.

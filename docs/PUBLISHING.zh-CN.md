@@ -91,7 +91,7 @@ git push
 
 ## 网站部署另行配置
 
-GitHub 开源只负责代码和 Release，不会自动把 `substacklight.com` 指向网站。当前官网需要构建为 Worker，不能直接把源码目录交给 GitHub Pages。网站部署、域名解析、浏览器商店上架都另行配置。
+GitHub 开源只负责代码和 Release，不会自动把 `substacklight.com` 指向网站。当前官网需要构建为 Worker，不能直接把源码目录交给 GitHub Pages。网站部署与域名绑定见 [Cloudflare 部署步骤](CLOUDFLARE_DEPLOY.zh-CN.md)。浏览器商店上架另行配置。
 
 参考：
 - https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository

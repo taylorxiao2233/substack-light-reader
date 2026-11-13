@@ -16,7 +16,12 @@
     "prebuild": "node scripts/prepare-local-config.mjs",
     "typecheck": "tsc --noEmit",
     "sync:downloads": "node scripts/sync-product-assets.mjs",
-    "pretypecheck": "node scripts/prepare-local-config.mjs"
+    "pretypecheck": "node scripts/prepare-local-config.mjs",
+    "cf:login": "node --import ./scripts/sites-env.mjs ./node_modules/wrangler/bin/wrangler.js login --scopes account:read user:read workers:write workers_routes:write zone:read",
+    "cf:whoami": "node --import ./scripts/sites-env.mjs ./node_modules/wrangler/bin/wrangler.js whoami",
+    "deploy": "npm run build && npm run deploy:built",
+    "deploy:built": "node --import ./scripts/sites-env.mjs ./node_modules/wrangler/bin/wrangler.js deploy --config dist/server/wrangler.json",
+    "deploy:check": "npm run deploy:built -- --dry-run"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",
