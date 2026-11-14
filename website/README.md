@@ -78,6 +78,12 @@ For an existing Sites deployment, keep its project binding in your ignored `.ope
 
 Email routing is configured at the domain provider. Adding `support@substacklight.com` to the page does not enable email delivery. See [Cloudflare email routing setup (中文)](../docs/EMAIL_SETUP.zh-CN.md).
 
+## Search indexing
+
+`public/robots.txt` allows crawling and points to `public/sitemap.xml`, which lists the 12 canonical English/Chinese page URLs. Language alternates remain in each page's HTML metadata. Update the sitemap when adding or removing a page, or when changing the public domain. It deliberately omits speculative last-modified dates.
+
+After deployment, follow the [Search Console setup guide (中文)](../docs/SEARCH_CONSOLE.zh-CN.md) to verify domain ownership through DNS and submit the sitemap. No analytics script is needed for this verification method.
+
 ## License
 
 The project's [MIT license](../LICENSE) applies to original project code. Preserve the separate notices in `vendor/` and `scripts/vite/sites-vite-plugin.LICENSE`, and the licenses of installed dependencies.
