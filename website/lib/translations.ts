@@ -1,5 +1,8 @@
 export const zh: Record<string, string> = {
   "Creator on X": "开发者的 X 主页",
+  "Source code on GitHub": "GitHub 开源代码",
+  "View source on GitHub": "在 GitHub 查看源码",
+  "Report an issue on GitHub": "在 GitHub 反馈问题",
   "Email support": "邮件反馈",
   "This form makes a copyable report. It does not submit or send your information anywhere.": "此表单只生成可复制的反馈文字，不会提交或发送任何信息。",
   "Questions or feedback?": "有问题或建议？",
