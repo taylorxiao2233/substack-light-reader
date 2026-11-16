@@ -13,3 +13,19 @@
 @media(max-width:1100px){.header-inner{gap:20px}.desktop-nav{gap:21px}.language-switch>button{font-size:10px;padding:5px 6px}}
 @media(max-width:800px){.header-inner{gap:12px}[data-site-locale=zh] .hero h1{font-size:64px}[data-site-locale=zh] .page-intro h1{font-size:49px}[data-site-locale=zh] .closing-cta h2{font-size:33px}[data-site-locale=zh] .step-heading h2{font-size:24px}.language-switch{margin-left:1px}}
 @media(max-width:480px){.header-inner{gap:10px}.header-inner>.nav-cta{display:none}.language-switch{margin-left:auto}.language-switch>button{min-width:31px;font-size:10px;padding:6px}.mobile-menu-button{padding:4px}[data-site-locale=zh] .hero h1{font-size:53px;letter-spacing:-1px}[data-site-locale=zh] .page-intro h1{font-size:40px}[data-site-locale=zh] .eyebrow,[data-site-locale=zh] .section-kicker{font-size:10px;letter-spacing:1.1px}[data-site-locale=zh] .section-heading h2,[data-site-locale=zh] .native-copy h2,[data-site-locale=zh] .supported-teaser h2,[data-site-locale=zh] .home-faq h2{font-size:31px}[data-site-locale=zh] .sample-content h2{font-size:28px}[data-site-locale=zh] .step-heading h2{font-size:22px}[data-site-locale=zh] .chrome-settings-top>span{font-size:8px}[data-site-locale=zh] .chrome-actions{font-size:7px;gap:9px}[data-site-locale=zh] .popup-illustration footer{font-size:8px;flex-wrap:wrap}[data-site-locale=zh] .address-copy{flex-wrap:wrap}[data-site-locale=zh] .quiet-strip p{font-size:20px}}
+
+/* Make the before/after demonstration an obvious, usable control. */
+.reading-preview .preview-toolbar{align-items:center;gap:14px;margin-bottom:7px;padding:0 4px}
+.preview-invite{display:inline-flex;align-items:center;gap:9px;min-height:48px;padding:0;border:0;background:none;color:#3f5032;text-align:left;flex-shrink:0}
+.preview-invite span{display:block;padding:8px 11px;border-radius:6px;background:#e9eed9;font-size:17px;font-weight:650;line-height:1.4;letter-spacing:0}
+.preview-invite:hover span{background:#dce6c5}
+.preview-hint-arrow{color:#74854f;flex:none}
+.reading-preview .theme-switch{gap:3px;padding:5px;background:#e6e9de;border:1px solid #d4dcc9;border-radius:9px;flex-shrink:0}
+.reading-preview .theme-switch button{justify-content:center;gap:8px;min-height:46px;padding:10px 13px;font-size:14px;font-weight:600;color:#5b6651;border-radius:5px;white-space:nowrap}
+.reading-preview .theme-switch button:first-child[aria-pressed=true]{background:#283026;color:#fffdf3;box-shadow:0 2px 7px #2633211c}
+.reading-preview .theme-switch button:last-child[aria-pressed=true]{background:var(--yellow);color:#303520;box-shadow:0 2px 7px #2633211c}
+.preview-playback{display:flex;justify-content:flex-end;margin:0 4px 17px}
+.preview-autoplay{display:inline-flex;align-items:center;gap:6px;min-height:32px;padding:5px 10px;border:0;border-radius:5px;background:#eeefe6;color:#59644f;font-size:12px;line-height:1.4}
+.preview-autoplay:hover{background:#e2e7d5;color:#34432a}
+@media(max-width:1100px){.reading-preview .preview-toolbar{flex-direction:column;align-items:stretch;gap:12px}.preview-invite{align-self:flex-start}.preview-hint-arrow{transform:rotate(35deg)}.reading-preview .theme-switch button{flex:1}.preview-playback{margin-top:1px}}
+@media(max-width:480px){.preview-invite span{font-size:16px}.preview-hint-arrow{width:40px}.reading-preview .theme-switch button{font-size:14px;min-height:46px;padding:10px 12px}.preview-playback{margin-bottom:15px}}
